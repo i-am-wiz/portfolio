@@ -20,11 +20,15 @@ jobs:
       with:
         node-version: '16'  # You can choose the appropriate Node version
 
+    # Install esbuild version 0.25.0
+    - name: Install esbuild version 0.25.0
+      run: npm install esbuild@0.25.0
+
     # Install dependencies
     - name: Install dependencies
       run: npm install
 
-    # Build the project
+    # Build project
     - name: Build project
       run: npm run build
 
