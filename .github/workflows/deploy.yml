@@ -5,6 +5,11 @@ on:
     branches:
       - main  # Trigger deployment only when code is pushed to 'main'
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,4 +43,5 @@ jobs:
       with:
         branch: gh-pages
         folder: dist
+        # clean: true
         token: ${{secrets.GITHUB_TOKEN}}
