@@ -35,6 +35,6 @@ jobs:
     # Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
-      # with:
-      #   github_token: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided by GitHub Actions
-      #   publish_dir: ./dist  # Path to the 'dist' folder that Vite generates
+      with:
+        branch: gh-pages
+        folder: dist
