@@ -105,7 +105,7 @@ const Contact = () => {
                                         <Github className="h-5 w-5" />
                                     </a>
                                     <a
-                                        href="https:www.linkedin.com/in/ved-timbadiya"
+                                        href="https://linkedin.com/in/ved-timbadiya"
                                         className="bg-navy hover:bg-teal text-white hover:text-navy p-3 rounded-full transition-colors duration-300"
                                         aria-label="LinkedIn"
                                     >

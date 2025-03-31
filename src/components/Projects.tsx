@@ -9,15 +9,15 @@ const Projects = () => {
             description:
                 "Developed a platform for easy check upon availability of Blood Bags in hospitals and blood banks in real time",
             technologies: ["JavaScript", "Firebase", "HTML", "CSS"],
-            github: "#",
-            demo: "#",
+            github: "https://github.com/i-am-wiz/Blood-Bag",
+            demo: "https://i-am-wiz.github.io/Blood-Bag/",
         },
         {
             title: "Bill split application",
             description:
                 "Developed an application for splitting bills among multiple people using Nodejs, ReactJs.",
             technologies: ["React", "Nodejs", "JavaScript", "HTML", "CSS"],
-            github: "#",
+            github: "https://github.com/i-am-wiz/Bill-split-app",
             demo: "#",
         },
         {

@@ -10,8 +10,11 @@ const Skills = () => {
     ];
 
     const otherSkills = [
-        "Git & GitHub",
-        "RESTful APIs",
+        "Java",
+        "JavaScript",
+        "C++",
+        "Algorithms",
+        "Spring Boot",
         "Database Design",
         "Problem Solving",
         "Design Patterns",
@@ -19,43 +22,24 @@ const Skills = () => {
         "Kubernetes",
         "SQL",
         "Testing",
+        "Git & GitHub",
+        "RESTful APIs",
     ];
 
     return (
         <section id="skills" className="py-20 navy-gradient">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="section-heading text-white">Skills</h2>
+                <h2 className="section-heading text-white">
+                    Tools and Technologies
+                </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
                     {/* Technical Skills */}
-                    <div>
-                        <h3 className="text-xl font-semibold mb-6 text-teal">
-                            Technical Proficiency
-                        </h3>
-                        <div className="space-y-6">
-                            {technicalSkills.map((skill, index) => (
-                                <div key={index}>
-                                    <div className="flex justify-between mb-2">
-                                        <span className="text-lightestSlate">
-                                            {skill.name}
-                                        </span>
-                                        <span className="text-teal">
-                                            {skill.level}%
-                                        </span>
-                                    </div>
-                                    <Progress
-                                        value={skill.level}
-                                        className="h-2 bg-lightNavy"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
 
                     {/* Other Skills */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-6 text-teal">
+                        {/* <h3 className="text-xl font-semibold mb-6 text-teal">
                             Additional Skills
-                        </h3>
+                        </h3> */}
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                             {otherSkills.map((skill, index) => (
                                 <div

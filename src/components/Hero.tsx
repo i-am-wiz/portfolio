@@ -52,7 +52,7 @@ const Hero = () => {
                             className="animate-fadeIn opacity-0"
                             style={{ animationDelay: "1s" }}
                         >
-                            <div className="flex space-x-4">
+                            <div className="flex space-x-4 mb-16 md:mb-0">
                                 <Button
                                     className="bg-transparent hover:bg-teal/10 text-teal border border-teal rounded"
                                     asChild
