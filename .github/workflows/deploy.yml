@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment only when code is pushed to 'main'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # You can choose the appropriate Node version
+
+    # Install esbuild version 0.25.0
+    - name: Install esbuild version 0.25.0
+      run: npm install esbuild@0.25.0
+
+    # Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # Build project
+    - name: Build project
+      run: npm run build
+
+    # Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: dist
+        # clean: true
+        token: ${{secrets.GITHUB_TOKEN}}
