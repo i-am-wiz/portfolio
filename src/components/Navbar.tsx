@@ -10,8 +10,8 @@ const Navbar = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
     const toggleResumeModal = () => setShowResumeModal(!showResumeModal);
 
-    // Path to your resume file
-    const resumePath = "/src/assets/resume.pdf";
+    // Updated path to resume file that will work in production
+    const resumePath = "/resume.pdf";
 
     const navLinks = [
         { title: "About", href: "#about" },
@@ -58,7 +58,7 @@ const Navbar = () => {
         // Create an anchor element and trigger download
         const link = document.createElement("a");
         link.href = resumePath;
-        link.download = "not-wiz-resume.pdf";
+        link.download = "ved-resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
